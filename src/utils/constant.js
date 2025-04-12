@@ -1,4 +1,4 @@
-const apiBaseUrl = "http://localhost:5000/api/v1"
+const apiBaseUrl = process.env.REACT_APP_API_BASE_URL || "http://localhost:5000/api/v1"
 
 export const redditApis = {
    PROCESS_USER_PROMPT: `${apiBaseUrl}/reddit/process-user-prompt`,
